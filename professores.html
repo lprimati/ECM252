@@ -1,0 +1,421 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Informações</title>
+    <!-- Required meta tags -->
+    <meta charset="utf-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, shrink-to-fit=no"
+    />
+
+    <!-- Bootstrap CSS -->
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+      integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T"
+      crossorigin="anonymous"
+    />
+  </head>
+
+  <body>
+    <!--Barra de navegação-->
+    <div class="container">
+      <nav class="navbar navbar-expand-lg navbar-light">
+        <a class="navbar-brand" href="maua_comp.html">
+          <img src="img/Logo_Maua.png" height="50" alt="Imagem aleatória" />
+        </a>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-toggle="collapse"
+          data-target="#navbar"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse" id="navbar">
+          <ul class="navbar-nav ml-auto topnav">
+            <li class="nav-item active">
+              <a class="nav-link" href="maua_comp.html">Home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="professores.html">Infos</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="sugestoes.html">Sugestões</a>
+            </li>
+            <li class="nav-item">
+              <a
+                class="nav-link btn btn-primary text-white"
+                type="button"
+                href="#"
+                data-toggle="modal"
+                data-target="#navModal"
+                >Login
+              </a>
+            </li>
+          </ul>
+        </div>
+        <!--Modal-->
+        <div class="modal" id="navModal">
+          <div class="modal-dialog">
+            <div class="modal-content">
+              <!-- Modal Header -->
+              <div class="modal-header">
+                <h4 class="modal-title">
+                  Login
+                </h4>
+                <button type="button" class="close" data-dismiss="modal">
+                  ×
+                </button>
+              </div>
+
+              <!--Modal body-->
+              <div class="modal-body">
+                <form>
+                  <label class="sr-only" for="email">
+                    E-mail
+                  </label>
+                  <div class="input-group mb-3">
+                    <div class="input-group-prepend">
+                      <span class="input-group-text" id="basic-addon1"
+                        ><i class="fa fa-user"></i
+                      ></span>
+                    </div>
+                    <input
+                      type="email"
+                      class="form-control"
+                      placeholder="E-mail"
+                      id="email"
+                    />
+                  </div>
+
+                  <label class="sr-only" for="Password">Senha</label>
+                  <div class="input-group mb-2">
+                    <div class="input-group-prepend">
+                      <span class="input-group-text" id="basic-addon2"
+                        ><i class="fa fa-key"></i
+                      ></span>
+                    </div>
+                    <input
+                      id="password"
+                      type="password"
+                      class="form-control"
+                      placeholder="Senha"
+                    />
+                  </div>
+                </form>
+              </div>
+
+              <!--Modal footer-->
+              <div class="modal-footer">
+                <button type="submit" class="btn btn-primary">Entrar</button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </nav>
+    </div>
+    <!--Fim da Barra-->
+
+    <!--Main text-->
+
+    <div class="container">
+      <h3>Nosso corpo docente</h3>
+      <p class="text-justify">
+        Nossos docentes são mais do que capacitados para o ensino dos graduandos
+        do Instituto Mauá de Técnologia, uma vez que todos possuem mestrado, e
+        doutorado.
+      </p>
+      <p class="text-justify">
+        Nós também estamos nos adaptando aos tempos modernos em relação a
+        infraestrutura para que os docentes possam ter melhor espaço para as
+        aulas e os alunos possam ter melhor experiência de aprendizado. Estamos
+        em constante mudança para que nossos alunos possam sempre ter o melhor
+        aprendizado.
+      </p>
+    </div>
+
+    <!--Fim do Main text-->
+
+    <!--Tabela dos professores-->
+    <div class="container">
+      <div id="accordion">
+        <div class="card">
+          <div class="card-header">
+            <h5>
+              <a
+                href="#collapse1"
+                data-parent="#accordion"
+                data-toggle="collapse"
+                >Admnistração</a
+              >
+            </h5>
+            <div id="collapse1" class="collapse">
+              <table class="table table-hover">
+                <thead>
+                  <tr>
+                    <th>Nome</th>
+                    <th>CV Lattes</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td>Ana Maria</td>
+                    <td><a href="#">Link</a></td>
+                  </tr>
+                  <tr>
+                    <td>Carlos Eduardo</td>
+                    <td><a href="#">Link</a></td>
+                  </tr>
+                  <tr>
+                    <td>Marcela</td>
+                    <td><a href="#">Link</a></td>
+                  </tr>
+                  <tr>
+                    <td>Rodrigo</td>
+                    <td><a href="#">Link</a></td>
+                  </tr>
+                  <tr></tr>
+                </tbody>
+              </table>
+            </div>
+          </div>
+        </div>
+        <div class="card">
+          <div class="card-header">
+            <h5>
+              <a
+                href="#collapse2"
+                data-parent="#accordion"
+                data-toggle="collapse"
+                >Design</a
+              >
+            </h5>
+            <div id="collapse2" class="collapse">
+              <table class="table table-hover">
+                <thead>
+                  <tr>
+                    <th>Nome</th>
+                    <th>CV Lattes</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td>Antonia</td>
+                    <td><a href="#">Link</a></td>
+                  </tr>
+                  <tr>
+                    <td>José Alencar</td>
+                    <td><a href="#">Link</a></td>
+                  </tr>
+                  <tr>
+                    <td>Maria Eduarda</td>
+                    <td><a href="#">Link</a></td>
+                  </tr>
+                  <tr>
+                    <td>Antonio José</td>
+                    <td><a href="#">Link</a></td>
+                  </tr>
+                  <tr></tr>
+                </tbody>
+              </table>
+            </div>
+          </div>
+        </div>
+        <div class="card">
+          <div class="card-header">
+            <h5>
+              <a
+                href="#collapse3"
+                data-parent="#accordion"
+                data-toggle="collapse"
+                >Egenharia de Computação</a
+              >
+            </h5>
+            <div id="collapse3" class="collapse">
+              <table class="table table-hover">
+                <thead>
+                  <tr>
+                    <th>Nome</th>
+                    <th>CV Lattes</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td>Ana</td>
+                    <td><a href="#">Link</a></td>
+                  </tr>
+                  <tr>
+                    <td>Rodrigo</td>
+                    <td><a href="#">Link</a></td>
+                  </tr>
+                  <tr>
+                    <td>Ewerson</td>
+                    <td><a href="#">Link</a></td>
+                  </tr>
+                  <tr>
+                    <td>Aparecido</td>
+                    <td><a href="#">Link</a></td>
+                  </tr>
+                  <tr></tr>
+                </tbody>
+              </table>
+            </div>
+          </div>
+        </div>
+        <div class="card">
+          <div class="card-header">
+            <h5>
+              <a
+                href="#collapse4"
+                data-parent="#accordion"
+                data-toggle="collapse"
+                >Egenharia Civil</a
+              >
+            </h5>
+            <div id="collapse4" class="collapse">
+              <table class="table table-hover">
+                <thead>
+                  <tr>
+                    <th>Nome</th>
+                    <th>CV Lattes</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td>Eduardo</td>
+                    <td><a href="#">Link</a></td>
+                  </tr>
+                  <tr>
+                    <td>Carlos</td>
+                    <td><a href="#">Link</a></td>
+                  </tr>
+                  <tr>
+                    <td>André</td>
+                    <td><a href="#">Link</a></td>
+                  </tr>
+                  <tr>
+                    <td>Afonso</td>
+                    <td><a href="#">Link</a></td>
+                  </tr>
+                  <tr></tr>
+                </tbody>
+              </table>
+            </div>
+          </div>
+        </div>
+        <div class="card">
+          <div class="card-header">
+            <h5>
+              <a
+                href="#collapse5"
+                data-parent="#accordion"
+                data-toggle="collapse"
+                >Egenharia de Alimentos</a
+              >
+            </h5>
+            <div id="collapse5" class="collapse">
+              <table class="table table-hover">
+                <thead>
+                  <tr>
+                    <th>Nome</th>
+                    <th>CV Lattes</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td>Marta</td>
+                    <td><a href="#">Link</a></td>
+                  </tr>
+                  <tr>
+                    <td>Rafael</td>
+                    <td><a href="#">Link</a></td>
+                  </tr>
+                  <tr>
+                    <td>Roberto</td>
+                    <td><a href="#">Link</a></td>
+                  </tr>
+                  <tr>
+                    <td>Marcos</td>
+                    <td><a href="#">Link</a></td>
+                  </tr>
+                  <tr></tr>
+                </tbody>
+              </table>
+            </div>
+          </div>
+        </div>
+        <div class="card">
+          <div class="card-header">
+            <h5>
+              <a
+                href="#collapse6"
+                data-parent="#accordion"
+                data-toggle="collapse"
+                >Egenharia Mecânica</a
+              >
+            </h5>
+            <div id="collapse6" class="collapse">
+              <table class="table table-hover">
+                <thead>
+                  <tr>
+                    <th>Nome</th>
+                    <th>CV Lattes</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td>Eduardo</td>
+                    <td><a href="#">Link</a></td>
+                  </tr>
+                  <tr>
+                    <td>Carlos</td>
+                    <td><a href="#">Link</a></td>
+                  </tr>
+                  <tr>
+                    <td>André</td>
+                    <td><a href="#">Link</a></td>
+                  </tr>
+                  <tr>
+                    <td>Afonso</td>
+                    <td><a href="#">Link</a></td>
+                  </tr>
+                  <tr></tr>
+                </tbody>
+              </table>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!--Final de Professores-->
+
+    <!--Footer-->
+    <nav aria-label="breadcrumb" class="container">
+      <ol class="breadcrumb">
+        <li class="breadcrumb-item"><a href="maua_comp.html">Home</a></li>
+        <li class="breadcrumb-item active">Infos</li>
+      </ol>
+    </nav>
+    <!--Fim do Footer-->
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script
+      src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+      integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+      integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+      integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+      crossorigin="anonymous"
+    ></script>
+  </body>
+</html>

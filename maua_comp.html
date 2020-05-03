@@ -1,59 +1,336 @@
 <!DOCTYPE html>
-<html lang="pt-BR">
-    <head>
-        <meta charset="utf-8">
-        <title>
-            O curso de Engenharia de Computação
-        </title>
-        <link rel="stylesheet" href="css/style.css">   
-    </head>
-    <body>
-        <!--imagem da maua, widht e height editam tamanho da imagem-->
-        <!--header e div id="cabecalho" são a mesma coisa-->
-        <header>
-            <img src="Logo-Mauá2.png" alt="logo Maua" width="30%">
-        <header>
-            <!--article e div id="principal" são a mesma coisa-->
-        <div id="principal">
-        <div id="cabecalho-principal">
-            <!--título da pagina, h1 possui maior letra dentre h1,h2,3...-->
-            <h1 id="titulo">O curso de Engenharia de Computação</h1>
-            <!--texto na pagina usando p-->
-            <!--usar (em) no texto, deixa o trexo em italico! (strong) em negrito! (mark) como se tivesse um marca texto!-->
-            <img src="https://image.freepik.com/vetores-gratis/conceito-de-programadores-com-design-plano_23-2147841208.jpg" alt="programador" width="40%">
-        </div>
-       
-        <p>
-            Curso de grande acensão no mundo e no Brasil, agora também 
-            no Instituto Maua de Tecnologia.
-        </p>
-        
-        <!--meu subtitulo-->
-        <h3 id="subtitulo">
-            Sobre o curso:</h3>
-        <p class="primeiro">
-            Neste curso é possível aprender diversas linguagens de programação,
-            como por exemplo a linguagem <a href="https://html.spec.whatwg.org/" target="_blank">HTML</a>
-            que é uma linguagem muito ulitizada para a criação de sites. Outra linguagem muito utilizada no mercado de trabalho
-            é a linguagem <a href="https://www.python.org/" target="_blank">Python</a> que por sua vez tem maior versatilidade
-            que HTML.
-        </p>
-        <p class="segundo">
-            Nos ensinam também a usar uma plataforma muito comum na área de Computação
-            que seria o <a href="https://github.com/" target="_blank">github</a>, local onde
-            é possível alojar seus programas e compartilhar com outras pessoas, para que elas também
-            possam pegar o código para si e mudar do jeito que quiser e compartilhar novamente caso queiram.
+<html lang="en">
+  <head>
+    <title>Title</title>
+    <!-- Required meta tags -->
+    <meta charset="utf-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, shrink-to-fit=no"
+    />
 
-        </p>
-        <p class="terceiro">
-            O curso de Engenharia de Computação no Instituto Maua de Tecnologia possui apenas
-            turmas no período diurno.
-        </p>
-        <p id="contato" class="final-pagina">
-            Entre em contato <img src="https://images.vexels.com/media/users/3/157287/isolated/preview/a109f22fce4e7113ebfe4caacbe2098e-telefone-rotativo-cl--ssico-by-vexels.png"
-             alt="icone_telefone" width="5%">: 0800 019 3100
-        </p>
+    <!-- Bootstrap CSS -->
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+      integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T"
+      crossorigin="anonymous"
+    />
+  </head>
+
+  <body>
+    <!--Barra de navegação-->
+    <div class="container">
+      <nav class="navbar navbar-expand-lg navbar-light">
+        <a class="navbar-brand" href="maua_comp.html">
+          <img src="img/Logo_Maua.png" height="50" alt="Imagem aleatória" />
+        </a>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-toggle="collapse"
+          data-target="#navbar"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse" id="navbar">
+          <ul class="navbar-nav ml-auto topnav">
+            <li class="nav-item active">
+              <a class="nav-link" href="maua_comp.html">Home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="professores.html">Infos</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="sugestoes.html">Sugestões</a>
+            </li>
+            <li class="nav-item">
+              <a
+                class="nav-link btn btn-primary text-white"
+                type="button"
+                href="#"
+                data-toggle="modal"
+                data-target="#navModal"
+                >Login
+              </a>
+            </li>
+          </ul>
         </div>
-        
-    </body>
+        <!--Modal-->
+        <div class="modal" id="navModal">
+          <div class="modal-dialog">
+            <div class="modal-content">
+              <!-- Modal Header -->
+              <div class="modal-header">
+                <h4 class="modal-title">
+                  Login
+                </h4>
+                <button type="button" class="close" data-dismiss="modal">
+                  ×
+                </button>
+              </div>
+
+              <!--Modal body-->
+              <div class="modal-body">
+                <form>
+                  <label class="sr-only" for="email">
+                    E-mail
+                  </label>
+                  <div class="input-group mb-3">
+                    <div class="input-group-prepend">
+                      <span class="input-group-text" id="basic-addon1"
+                        ><i class="fa fa-user"></i
+                      ></span>
+                    </div>
+                    <input
+                      type="email"
+                      class="form-control"
+                      placeholder="E-mail"
+                      id="email"
+                    />
+                  </div>
+
+                  <label class="sr-only" for="Password">Senha</label>
+                  <div class="input-group mb-2">
+                    <div class="input-group-prepend">
+                      <span class="input-group-text" id="basic-addon2"
+                        ><i class="fa fa-key"></i
+                      ></span>
+                    </div>
+                    <input
+                      id="password"
+                      type="password"
+                      class="form-control"
+                      placeholder="Senha"
+                    />
+                  </div>
+                </form>
+              </div>
+
+              <!--Modal footer-->
+              <div class="modal-footer">
+                <button type="submit" class="btn btn-primary">Entrar</button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </nav>
+    </div>
+    <!--Fim da Barra-->
+
+    <!--fotos rodando-->
+    <div class="col-sm-8 m-auto">
+      <div id="carousel1" class="carousel slide mb-4" data-ride="carousel">
+        <ol class="carousel-indicators">
+          <li class="active" data-target="#carousel1" data-slide-to="0"></li>
+          <li data-target="#carousel1" data-slide-to="1"></li>
+          <li data-target="#carousel1" data-slide-to="2"></li>
+        </ol>
+        <div class="carousel-inner">
+          <a href="#carousel1" class="carousel-control-prev" data-slide="prev">
+            <span class="carousel-control-prev-icon"></span>
+          </a>
+          <a href="#carousel1" class="carousel-control-next" data-slide="next"
+            ><span class="carousel-control-next-icon"></span>
+          </a>
+          <div class="carousel-item active text-center">
+            <img src="img/car-4.jpg" height="400" alt="Slide 1" />
+          </div>
+          <div class="carousel-item text-center">
+            <img src="img/car-1.jpg" height="400" alt="Slide 2" />
+          </div>
+          <div class="carousel-item text-center">
+            <img src="img/car-2.JPG" height="400" alt="Slide 3" />
+          </div>
+        </div>
+      </div>
+    </div>
+    <!--Fim das fotos rodando-->
+
+    <!--Main text-->
+
+    <div class="container">
+      <p class="text-justify">
+        O Instituto Mauá de Tecnologia - IMT, fundado em 11 de dezembro de 1961,
+        é uma entidade de direito privado - associação sem fins lucrativos - de
+        utilidade pública, dedicada ao ensino e à pesquisa científica e
+        tecnológica, visando à formação de recursos humanos altamente
+        qualificados que contribuam para o desenvolvimento do País.
+      </p>
+    </div>
+
+    <!--Fim do Main text-->
+
+    <!--Cursos-->
+    <div class="container">
+      <h3>Nossos Cursos</h3>
+      <div class="row">
+        <div class="col-md my-2">
+          <div class="card text-center">
+            <div class="card-header">
+              Administração
+            </div>
+            <div class="card-body">
+              <img src="img/adm.png" alt="Imagem aleatória" />
+              <p class="card-text">
+                O Administrador Mauá é um profissional preparado para atuar,
+                sempre como líder, nos mais diversos mercados de trabalho:
+                instituições financeiras, empresas de serviços, consultorias,
+                comércio varejista ou atacadista e indústrias de diversos
+                segmentos, como Automobilístico, Eletroeletrônico, Alimentício,
+                entre outros. Os alunos desenvolvem, ao longo do curso,
+                capacitação e treinamento para a tomada de decisões e para a
+                resolução de problemas de gestão empresarial.
+              </p>
+            </div>
+            <div class="card-footer text-muted">
+              4 anos de duração
+            </div>
+          </div>
+        </div>
+        <div class="col-md my-2">
+          <div class="card text-center">
+            <div class="card-header">
+              Design
+            </div>
+            <div class="card-body">
+              <img src="img/dsg.png" alt="Imagem aleatória" />
+              <p class="card-text">
+                O curso de Design da Mauá, oferecido desde 2007, possui nota
+                máxima no MEC, tem conquistado seu espaço no mundo acadêmico e
+                já deixa sua marca de qualidade no mercado. Por meio de uma
+                importante convivência com a tecnologia e os negócios, num
+                ambiente bem estruturado, com professores comprometidos e bem
+                preparados, apresenta um currículo arrojado e um projeto
+                pedagógico atualizadíssimo; Vem formando Designers talentosos e
+                atendendo às demandas do mercado.
+              </p>
+            </div>
+            <div class="card-footer text-muted">
+              4 anos de duração
+            </div>
+          </div>
+        </div>
+
+        <div class="col-md my-2">
+          <div class="card text-center">
+            <div class="card-header">
+              Engenharia de Computação
+            </div>
+            <div class="card-body">
+              <img src="img/engcomp.png" alt="Imagem aleatória" />
+              <p class="card-text">
+                A Engenharia de Computação está presente em nosso dia a dia e
+                nas mais diversas áreas: Educação, Indústrias, Redes de
+                Comunicação e Dispositivos Móveis, Transportes, Entreterimento,
+                entre outras. Essa diversidade de aplicações para o Engenheiro
+                de Computação qualifica-o para atuar como desenvolvedor,
+                engenheiro, empreendedor, executivo de grandes corporações.
+              </p>
+            </div>
+            <div class="card-footer text-muted">
+              5 anos de duração
+            </div>
+          </div>
+        </div>
+
+        <div class="col-md my-2">
+          <div class="card text-center">
+            <div class="card-header">
+              Engenharia Civil
+            </div>
+            <div class="card-body">
+              <img src="img/enc.png" alt="Imagem aleatória" />
+              <p class="card-text">
+                O curso tem uma área de atuação ampla que exige do profissional
+                uma formação diversificada e pronto para atender obras
+                distintas: construção de edifícios residenciais, ferrovias,
+                aeroportos ou faça o planejamento de sistemas de saneamento
+                básico para cidades, podendo trabalhar com arquitetos e
+                ambientalistas em grandes construções.
+              </p>
+            </div>
+            <div class="card-footer text-muted">
+              5 anos de duração
+            </div>
+          </div>
+        </div>
+
+        <div class="col-md my-2">
+          <div class="card text-center">
+            <div class="card-header">
+              Engenharia de Alimentos
+            </div>
+            <div class="card-body">
+              <img src="img/eda.png" alt="Imagem aleatória" />
+              <p class="card-text">
+                A graduação em Engenharia de Alimentos da Mauá oferece um
+                intenso programa prático que leva o aluno desde as primeiras
+                séries para os laboratórios didáticos e de pesquisa e de
+                processamento em pequena escala. O campus conta ainda com uma
+                instalação semi-industrial capaz de simular a produção de
+                diversos produtos, semelhante ao que fazem as indústrias de
+                alimentos.
+              </p>
+            </div>
+            <div class="card-footer text-muted">
+              5 anos de duração
+            </div>
+          </div>
+        </div>
+
+        <div class="col-md my-2">
+          <div class="card text-center">
+            <div class="card-header">
+              Engenharia Mecânica
+            </div>
+            <div class="card-body">
+              <img src="img/em.png" alt="Imagem aleatória" />
+              <p class="card-text">
+                A graduação em Engenharia Mecânica é uma das mais abrangentes
+                modalidades da Engenharia. Ela trata de tudo o que se move, de
+                brinquedos a fábricas (com tudo o que está dentro), passando por
+                eletrodomésticos, embarcações, veículos etc. Além disso, ela
+                trata de instalações de conversão de energia como hidroelétricas
+                e termoelétricas, instalações de ar-condicionado, de geração de
+                vapor e frigoríficas.
+              </p>
+            </div>
+            <div class="card-footer text-muted">
+              5 anos de duração
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!--Fim dos Cursos-->
+
+    <!--Footer-->
+    <nav aria-label="breadcrumb" class="container">
+      <ol class="breadcrumb">
+        <li class="breadcrumb-item active">Home</li>
+      </ol>
+    </nav>
+
+    <!--Fim do Footer-->
+
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script
+      src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+      integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+      integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+      integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+      crossorigin="anonymous"
+    ></script>
+  </body>
 </html>
