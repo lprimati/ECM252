@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+
+<body>
+    <nav class="navbar navbar-expand-md navbar-light bg-primary fixed-top">
+        <div class="container">
+            <a href="#" class="navbar-brand">IMT</a>
+            <button class="navbar-toggler" data-toggle="collapse" data-target="#minhaNavbar">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="minhaNavbar">
+                <ul class="navbar-nav">
+                    <li class="nav-item">
+                        <a class="nav-link" href="index.html">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="">Professores</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="">Sugestões</a>
+                    </li>
+
+                </ul>
+                <form class="form-inline">
+                    <input type="text" class="form-control mr-2" id="login" placeholder="Digite seu login">
+                    <input type="password" class="form-control mr-2" id="senha" placeholder="Digite sua senha">
+                    <button type="submit" class="btn btn-light">Login</button>
+                </form>
+            </div>
+        </div>
+    </nav>
+    <app-cursos></app-cursos>
+    <app-professores></app-professores>
+</body>
+
+</html>
