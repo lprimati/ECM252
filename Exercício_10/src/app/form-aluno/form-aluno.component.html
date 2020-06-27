@@ -1,0 +1,37 @@
+<div class="container">
+    <div>
+        Cadastrar Aluno
+    </div>
+    <form #alunoForm="ngForm" (ngSubmit)="salvar(alunoForm)" [ngStyle]="obterEstilosForm()">
+        <div class="row">
+            <div class="form-group col-12">
+                <label for="nomeInput">Nome</label>
+                <input type="text" placeholder="Nome" class="form-control p-4" name="nome" ngModel>
+            </div>
+        </div>
+        <div class="row">
+            <div class="form-group col-md-12">
+                <label for="emailInput">Email</label>
+                <input type="text" placeholder="Email" class="form-control p-4" name="email" ngModel>
+            </div>
+        </div>
+        <div class="row">
+            <div class="form-group col-4">
+                <label for="idadeInput">Idade</label>
+                <input type="text" placeholder="Idade" class="form-control p-4" name="idade" ngModel>
+            </div>
+            <div class="form-group col-md-8">
+                <label for="cursoInput">Curso</label>
+                <select name="" id="cursoInput" class="form-control" name="curso" ngModel>
+                    <option value="">Selecione</option>
+                    <option *ngFor="let curso of cursos">{{curso}}</option>
+                </select>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-12">
+                <button type="submit" class="btn btn-primary btn-block">Cadastrar</button>
+            </div>
+        </div>
+    </form>
+</div>
